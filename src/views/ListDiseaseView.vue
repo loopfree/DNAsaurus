@@ -12,9 +12,9 @@ export default {
 			noData: true,
 			dateRegex:
 				/(\d{1,2}\s((January)|(February)|(March)|(April)|(May)|(June)|(July)|(August)|(September)|(October)|(November)|(December)).*\d{1,4})/,
-			diseaseRegex: /^.*$/,
+			diseaseRegex: /[A-Za-z0-9].*/,
 			combinedRegex:
-				/(\d{1,2}\s((January)|(February)|(March)|(April)|(May)|(June)|(July)|(August)|(September)|(October)|(November)|(December)).*\d{1,4})\s*(.*)/,
+				/(\d{1,2}\s((January)|(February)|(March)|(April)|(May)|(June)|(July)|(August)|(September)|(October)|(November)|(December)).*\d{1,4})\s*([A-Za-z0-9].*)/,
 		};
 	},
 	components: {
